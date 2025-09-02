@@ -1,0 +1,6 @@
+// Function to change background color
+function changeBackground() {
+  const colors = ["#f0f0f0", "#ffcccc", "#cce7ff", "#d4f5d0", "#f9e79f"];
+  document.body.style.backgroundColor =
+    colors[Math.floor(Math.random() * colors.length)];
+}
