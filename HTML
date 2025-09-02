@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      transition: background-color 1s ease; /* CSS transition */
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background 0.5s ease; /* CSS transition */
+    }
+
+    button:hover {
+      background: #555;
+    }
+
+    .card {
+      width: 250px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.5s ease; /* CSS transition */
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Web Developer | Designer | Coder</p>
+  </header>
+
+  <div class="content">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Hello! I am a passionate web developer creating simple and elegant websites.</p>
+    </div>
+
+    <button onclick="changeBackground()">Change Background</button>
+  </div>
+
+  <script>
+    function changeBackground() {
+      const colors = ["#f0f0f0", "#ffcccc", "#cce7ff", "#d4f5d0", "#f9e79f"];
+      document.body.style.backgroundColor = 
+        colors[Math.floor(Math.random() * colors.length)];
+    }
+  </script>
+
+</body>
+</html>
